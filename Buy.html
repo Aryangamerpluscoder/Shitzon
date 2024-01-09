@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Buy and Sell System</title>
+</head>
+<body>
+
+<div id="balance">Balance: $5,000,000,000</div>
+
+<div class="item" id="item1">
+    <img src="cookie_image.jpg" alt="Cookie">
+    <p>Cookie - $2,000,000</p>
+    <button onclick="buyItem(2000000, 'item1')">Buy</button>
+    <button onclick="sellItem(2000000, 'item1')">Sell</button>
+</div>
+
+<div class="item" id="item2">
+    <img src="anime_image.jpg" alt="Anime">
+    <p>Anime - $3,000,000</p>
+    <button onclick="buyItem(3000000, 'item2')">Buy</button>
+    <button onclick="sellItem(3000000, 'item2')">Sell</button>
+</div>
+
+<div class="item" id="item3">
+    <img src="amongus_image.jpg" alt="Amongus">
+    <p>Amongus - $1,000,000</p>
+    <button onclick="buyItem(1000000, 'item3')">Buy</button>
+    <button onclick="sellItem(1000000, 'item3')">Sell</button>
+</div>
+
+<div class="item" id="item4">
+    <img src="zidan_image.jpg" alt="Zidan">
+    <p>Zidan - Free</p>
+    <button onclick="claimItem('item4')">Claim</button>
+    <!-- Remove the sell button for Zidan -->
+</div>
+
+<div class="item" id="item5">
+    <img src="dababy_image.jpg" alt="Dababy">
+    <p>Dababy - $1,000,000,000</p>
+    <button onclick="buyItem(1000000000, 'item5')">Buy</button>
+    <button onclick="sellItem(1000000000, 'item5')">Sell</button>
+</div>
+
+<a href="items_owned.html" onclick="showOwnedItemsCount();" target="_blank">
+    <button>Go to Owned Items</button>
+</a>
+
+<script src="java.js"></script>
+</body>
+</html>

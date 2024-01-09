@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inventory</title>
+</head>
+<body>
+    <h2>Your Inventory</h2>
+
+    <div class="item" id="cookie">
+        <img src="path/to/cookie_image.jpg" alt="Cookie">
+        <p>Cookie - Owned: <span id="cookie-count">0</span></p>
+        <button onclick="useItem('cookie')">Use</button>
+    </div>
+
+    <div class="item" id="anime">
+        <img src="path/to/anime_image.jpg" alt="Anime">
+        <p>Anime - Owned: <span id="anime-count">0</span></p>
+        <button onclick="useItem('anime')">Use</button>
+    </div>
+
+    <div class="item" id="amongus">
+        <img src="path/to/amongus_image.jpg" alt="Among Us">
+        <p>Among Us - Owned: <span id="amongus-count">0</span></p>
+        <button onclick="useItem('amongus')">Use</button>
+    </div>
+
+    <!-- Repeat the above structure for other items -->
+
+    <script src="inventory.js"></script>
+</body>
+</html>
